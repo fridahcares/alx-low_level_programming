@@ -8,21 +8,25 @@ int main(void)
 {
 	int d, p;
 
-	for (d = '0'; d < '9'; d++)
+	while (d <= 9)
 	{
-		for (p = d + 1; p <= '9'; p++)
+		p = 0;
+		while (p <= 9)
 		{
-			if (p != d)
+			if (d != p && d < p)
 			{
-				putchar (d);
-				putchar (p);
-				if (d == '8' && p == '9')
-					continue;
+				putchar (d + 48);
+				putchar (p + 48);
+				if (d + p != 17)
+				{
 				putchar(',');
 				putchar(' ');
 			}
-			putchar('\n');
-			return (0);
+			}
+				++p;
+			}
+			++d;
 		}
-	}
+		putchar('\n');
+		return (0);
 }
