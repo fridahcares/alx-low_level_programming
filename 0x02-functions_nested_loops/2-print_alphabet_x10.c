@@ -2,7 +2,7 @@
 /**
  * print_alphabet_x10 - print 10 times the alphabet
  *
- * Return: Always 0 (success)
+ * Return: void
  */
 void print_alphabet_x10(void)
 {
@@ -13,8 +13,8 @@ void print_alphabet_x10(void)
 		for (c = 'a'; c <= 'z'; c++)
 		{
 			_putchar(c);
-			_putchar('\n');
 		}
-		i++;
+			_putchar('\n');
+			i++;
 	}
 }
