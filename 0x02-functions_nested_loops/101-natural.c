@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
- * main - Entry point
+ * main - print the sum of natural numbers
  *
- * Return: Always 0
+ * Return: Always success
  */
 int main(void)
 {
@@ -14,4 +14,5 @@ int main(void)
 			sum += i;
 	}
 	printf("%d\n", sum);
+	return (0);
 }
