@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * add_integers - adds two integers and returns the result
+ * add - adds two integers and returns the result
  * @a: integer to be added to b
  * @b: integer to be added to a
  * Return: Sum of a and b
