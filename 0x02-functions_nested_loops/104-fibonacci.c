@@ -14,15 +14,15 @@ int main(void)
 	a = 1;
 	b = 2;
 
-	for (i = 1; i < 98; i++)
+	for (i = 1; i <= 98; i++)
 	{
-		printf("%ld, ", a);
+		printf("%ld", a);
 		c = a + b;
 		a = b;
 		b = c;
 		if (i != 98)
 		{
-			printf("%ld", c);
+			printf(", ");
 		}
 	}
 	printf("\n");
