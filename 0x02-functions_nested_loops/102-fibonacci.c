@@ -20,7 +20,10 @@ int main(void)
 		c = a + b;
 		a = b;
 		b = c;
-		printf(", ");
+		if (i != 50)
+		{
+			printf(", ");
+		}
 	}
 	printf("\n");
 	return (0);
