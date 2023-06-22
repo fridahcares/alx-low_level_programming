@@ -9,7 +9,7 @@
 int main(void)
 {
 	int long a, maxf;
-	long number = 1231952;
+	long number = 612852475143;
 	double square = sqrt(number);
 
 	for (a = 1; a <= square; a++)
@@ -22,4 +22,3 @@ int main(void)
 	printf("%ld\n", maxf);
 	return (0);
 }
-
