@@ -10,7 +10,7 @@ int _atoi(char *s)
 	int i = 0;
 	int result = 0;
 	int sign = 1;
-	int isi = 0;
+	int f = 0;
 
 	while (s[i])
 	{
@@ -20,13 +20,13 @@ int _atoi(char *s)
 	}
 	while (s[i] >= '0' && s[i] <= '9')
 	{
-		isi = 1;
+		f = 1;
 	result = (result * 10) + (s[i] - '0');
 	i++;
 	}
-	if (isi == 1)
+	if (f == 1)
 	{
-		break;
+	break;
 	}
 	i++;
 	}
