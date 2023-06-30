@@ -13,11 +13,12 @@ char *rot13(char *str)
 	{
 		if ((str[i] >= 'A' && str[i] <= 'M') || (str[i] >= 'a' && str[i] <= 'm'))
 		{
-			result += 13;
+			result[i] += 13;
 		}
-		if ((str[i] >= 'N' && str[i] <= 'Z') || (str[i] >= 'n' && str[i] <= 'z'))
+		else if
+			((str[i] >= 'N' && str[i] <= 'Z') || (str[i] >= 'n' && str[i] <= 'z'))
 		{
-			result -= 13;
+			result[i] -= 13;
 		}
 	}
 	return (result);
