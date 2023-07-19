@@ -25,14 +25,9 @@ int main(int argc, char *argv[])
 	ptr = (char *)main;
 
 	for (i = 0; i < bytes; i++)
-	{
-		if (i == bytes - 1)
-		{
-			printf("%02hhx\n", ptr[i]);
-			break;
-		}
-		printf("%02hhx", ptr[i]);
-	}
+		printf("%02hhx", *(ptr + i));
+
+
 	printf("\n");
 	return (0);
 }
