@@ -1,9 +1,8 @@
 #include "main.h"
-
+#include <stdio.h>
 /**
- * print_binary - prints the binary representation of a number
- * @n: the integer to be converted
- * Return: binary representation
+ * print_binary - function that prints the binary representation of a number
+ * @n: integer to be printed in binary
  */
 void print_binary(unsigned long int n)
 {
@@ -12,16 +11,16 @@ void print_binary(unsigned long int n)
 
 	for (j = 63; j >= 0; j++)
 	{
-		current = n >> j;
+		current = n >> 1;
 
 		if (current & 1)
 		{
-			_putchar('1');
+			printf("1");
 			count++;
 		}
 		else if (count)
-			_putchar('0');
+			printf("0");
 	}
 	if (!count)
-		_putchar('0');
+		printf("0");
 }
