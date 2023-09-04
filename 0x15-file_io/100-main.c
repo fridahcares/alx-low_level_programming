@@ -2,7 +2,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <elf.h>
-#include "100-elf_header"
 
 void close_elf(int elf);
 /**
